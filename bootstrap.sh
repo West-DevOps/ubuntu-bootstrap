@@ -8,7 +8,7 @@ sudo apt-get upgrade -y
 # Install OS tools / packages
 sudo apt-get install -y git zsh curl wget gpg g++ make python3 python3-virtualenv build-essential openssl \
     libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm libncurses5-dev libncursesw5-dev \
-    xz-utils tk-dev libffi-dev liblzma-dev python3-openssl
+    xz-utils tk-dev libffi-dev liblzma-dev python3-openssl firefox
 
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -25,7 +25,7 @@ echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
 echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init - zsh)"' >> ~/.zshrc
 
-# Install nvm & node
+# Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 
 # Install zed editor
